@@ -1,0 +1,215 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "32CA4C8A",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "1643833672",
+      "localizations" : [
+        {
+          "description" : "비소모성 상품 테스트",
+          "displayName" : "비소모성 상품 테스트",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "cointop2_apple_app_store_gem0",
+      "referenceName" : "cointop2_apple_app_store_gem0",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "1634553753",
+      "localizations" : [
+        {
+          "description" : "보석100개를 획득합니다.",
+          "displayName" : "보석100개",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "cointop2_apple_app_store_gem100",
+      "referenceName" : "cointop2_apple_app_store_gem100",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "99.99",
+      "familyShareable" : false,
+      "internalID" : "1637565452",
+      "localizations" : [
+        {
+          "description" : "보석100,000개를 획득합니다.",
+          "displayName" : "보석100,000개",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "cointop2_apple_app_store_gem100000",
+      "referenceName" : "cointop2_apple_app_store_gem100000",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "1634553580",
+      "localizations" : [
+        {
+          "description" : " 보석300개를 획득합니다.",
+          "displayName" : " 보석300개",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "cointop2_apple_app_store_gem300",
+      "referenceName" : "cointop2_apple_app_store_gem300",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "1634553978",
+      "localizations" : [
+        {
+          "description" : "보석500개를 획득합니다.  ",
+          "displayName" : "보석500개",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "cointop2_apple_app_store_gem500",
+      "referenceName" : "cointop2_apple_app_store_gem500",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "1634550671",
+      "localizations" : [
+        {
+          "description" : "100 GEM",
+          "displayName" : "100 GEM",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "ct2_apple_app_store_gem100",
+      "referenceName" : "ct2_apple_app_store_gem100",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "99.99",
+      "familyShareable" : false,
+      "internalID" : "1637565818",
+      "localizations" : [
+        {
+          "description" : "100,000 GEM",
+          "displayName" : "100,000 GEM",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "ct2_apple_app_store_gem100000",
+      "referenceName" : "ct2_apple_app_store_gem100000",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "1634550675",
+      "localizations" : [
+        {
+          "description" : "300 GEM ",
+          "displayName" : "300 GEM ",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "ct2_apple_app_store_gem300",
+      "referenceName" : "ct2_apple_app_store_gem300",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "1634550960",
+      "localizations" : [
+        {
+          "description" : "500 GEM ",
+          "displayName" : "500 GEM ",
+          "locale" : "ko"
+        }
+      ],
+      "productID" : "ct2_apple_app_store_gem500",
+      "referenceName" : "ct2_apple_app_store_gem500",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "1633377412",
+    "_developerTeamID" : "2T4469S56U",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 775721593.07104504,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}
