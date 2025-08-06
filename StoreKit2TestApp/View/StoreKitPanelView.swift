@@ -8,15 +8,14 @@ import SwiftUI
 import StoreKit
 
 struct StoreKitPanelView: View {
-    @Binding var useStoreKit2: Bool
-    @Binding var selectedProduct: Product?
+    @ObservedObject var viewModel: StoreViewModel
     
     var body: some View {
         
         VStack(alignment: .leading, spacing: 16) {
             
             VStack(alignment: .leading, spacing: 8) {
-                Toggle(isOn: $useStoreKit2) {
+                Toggle(isOn: $viewModel.useStoreKit2) {
                     Text("Use StoreKit2")
                         .foregroundColor(.white)
                 }
@@ -29,16 +28,45 @@ struct StoreKitPanelView: View {
                     .stroke(Color.white.opacity(1), lineWidth: 1)
             )
             
+            //MARK: - 선택 상품 드롭다운
             VStack(alignment: .leading, spacing: 12) {
-                if let selected = selectedProduct {
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(selected.displayName)
-                            .font(.caption)
-                            .foregroundStyle(.gray)
+                Picker("Select Product", selection: $viewModel.selectedProductID) {
+                    Text("None").tag(nil as String?) //add nil tag
+                    
+                    ForEach(viewModel.products, id: \.id) { product in
+                        Text(product.displayName).tag(product.id as String?)
                     }
-                } else {
-                    Text("")
-                        .foregroundColor(.white.opacity(0.6))
+                }
+                .pickerStyle(.menu)
+                
+                if let selected = viewModel.selectedProduct {
+                    Text("select product :\(selected.displayName)")
+                        .font(.caption)
+                        .foregroundStyle(.gray)
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding()
+            .background(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color.white.opacity(1), lineWidth: 1)
+            )
+            
+            //MARK: - 복구 상품 트랜젝션 드롭다운
+            VStack(alignment: .leading, spacing: 12) {
+                Picker("Select Transaction", selection: $viewModel.selectedTransactionID) {
+                    Text("None").tag(nil as String?) //add nil tag
+                    
+                    ForEach(viewModel.uncompletedTransactions, id: \.id) { tx in
+                        Text("Item : \(tx.productID)").tag(tx.productID as String?)
+                    }
+                }
+                .pickerStyle(.menu)
+                
+                if let selected = viewModel.selectedTransaction {
+                    Text("select Transaction :\(String(describing: selected.id ))")
+                        .font(.caption)
+                        .foregroundStyle(.gray)
                 }
             }
             .frame(maxWidth: .infinity, alignment: .leading)

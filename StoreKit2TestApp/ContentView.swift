@@ -9,13 +9,7 @@ import SwiftUI
 import StoreKit
 
 struct ContentView: View {
-    @State private var useStoreKit2 = true
-    @State private var products: [Product] = []
-    @State private var selectedProduct: Product?
-    
-    @State private var isProductFetchOn = true
-    @State private var isPurchaseOn = true
-    @State private var isCompletionOn = true
+    @StateObject private var storeKitViewModel = StoreViewModel()
     
     init() {
         let navBarAppearance = UINavigationBarAppearance()
@@ -36,13 +30,17 @@ struct ContentView: View {
                 
                 ScrollView {
                     VStack(alignment: .leading, spacing: 10) {
-                        
-                        StoreKitPanelView(useStoreKit2: $useStoreKit2, selectedProduct: $selectedProduct)
-                        
+                        StoreKitPanelView(viewModel: storeKitViewModel)
                     }
                     
                     VStack(alignment: .leading, spacing: 10) {
-                        RequestPanelView(isProductFetchOn: $isProductFetchOn, isPurchaseOn: $isPurchaseOn, isCompletionOn: $isCompletionOn)
+                        RequestPanelView(viewModel: storeKitViewModel)
+                    }
+                    VStack(alignment: .leading, spacing: 10) {
+                        ActionPanelView(viewModel: storeKitViewModel)
+                    }
+                    VStack(alignment: .leading, spacing: 10) {
+                        BottomPanelView(viewModel: storeKitViewModel)
                     }
                 }
             }

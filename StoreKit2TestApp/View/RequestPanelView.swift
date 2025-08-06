@@ -8,16 +8,29 @@ import SwiftUI
 import StoreKit
 
 struct RequestPanelView: View {
-    @Binding var isProductFetchOn: Bool
-    @Binding var isPurchaseOn: Bool
-    @Binding var isCompletionOn: Bool
+    @ObservedObject var viewModel: StoreViewModel
+    private let productIDs = ["ct2_apple_app_store_gem100", "ct2_apple_app_store_gem300", "ct2_apple_app_store_gem500"]
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
+            Text("Request Panel")
+                .font(.headline)
+                .foregroundColor(.white)
             
-            ToggleCardView(title: "상품 조회", isOn: $isProductFetchOn)
-            ToggleCardView(title: "인앱 결제", isOn: $isPurchaseOn)
-            ToggleCardView(title: "결제 완료", isOn: $isCompletionOn)
+            ToggleCardView(title: "상품 조회", isOn: $viewModel.isProductFetchOn)
+                .onChange(of: viewModel.isProductFetchOn) { isOn in
+                        if isOn {
+                            Task {
+                                await viewModel.fetchProducts(with: productIDs)
+                            }
+                        } else {
+                            Task {
+                                viewModel.products.removeAll()
+                                viewModel.selectedProductID = nil
+                            }
+                        }
+                    }
+            ToggleCardView(title: "결제 완료", isOn: $viewModel.isCompletionOn)
         }
         .padding()
         .background(
