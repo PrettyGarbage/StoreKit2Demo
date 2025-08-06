@@ -91,7 +91,7 @@ struct BottomPanelView: View {
             UIPasteboard.general.string = body
             showAlert = true
         }
-        .alert("Receipt Cobied", isPresented: $showAlert) {
+        .alert("Receipt Copied", isPresented: $showAlert) {
             Button("Confirm", role: .cancel) {}
         } message: {
             Text("영수증 정보가 클립보드에 복사되었습니다.")
