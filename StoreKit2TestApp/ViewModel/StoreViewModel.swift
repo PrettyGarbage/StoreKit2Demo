@@ -8,6 +8,7 @@
 import Foundation
 import StoreKit
 import SwiftUI
+import DeclaredAgeRange
 
 //MARK: - Main Thread에서만 접근 가능
 @MainActor
@@ -140,6 +141,49 @@ class StoreViewModel: ObservableObject {
                     print("Transaction Update Failed: \(error)")
                 }
             }
+        }
+    }
+    
+    //MARK: - 연령 요청
+    func onRequestDeclaredAgeRange(presenter: UIViewController) async {
+        do {
+            // 게이트는 최소 2년 간격, 최대 3개
+            let response = try await AgeRangeService.shared
+                .requestAgeRange(ageGates: 5, 12, 18, in: presenter)
+            
+            switch response {
+            case .sharing(let range):
+                guard let lower = range.lowerBound else {
+                    // < 최저 게이트 미만 (여기선 <5)
+                    print("sharing : under \(5)")
+                    return
+                }
+                if lower >= 18 {
+                    print("sharing : 18+ Available")
+                } else if lower >= 15 {
+                    print("sharing : 15+ Available")
+                } else if lower >= 13 {
+                    print("sharing : 13+ Available")
+                } else if lower >= 5 {
+                    print("sharing : 5+ Available")
+                }
+                
+            case .declinedSharing:
+                print("declined sharing")
+            @unknown default:
+                print("unknown error")
+            }
+        } catch let e as AgeRangeService.Error {
+            switch e {
+            case .notAvailable:
+                print("not available")
+            case .invalidRequest:
+                print("invalid request (check ageGates spacing/max count)")
+            @unknown default:
+                print("unknown AgeRangeService error: \(e)")
+            }
+        } catch {
+            print("unexpected error: \(error.localizedDescription)")
         }
     }
     
