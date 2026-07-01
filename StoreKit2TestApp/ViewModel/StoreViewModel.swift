@@ -9,6 +9,8 @@ import Foundation
 import StoreKit
 import SwiftUI
 import DeclaredAgeRange
+import GameKit
+import NTBaseFramework
 
 //MARK: - Main Thread에서만 접근 가능
 @MainActor
@@ -65,7 +67,7 @@ class StoreViewModel: ObservableObject {
                     if(isCompletionOn) {
                         selectedProductID = nil
                         await transaction.finish()
-                        print("구매 완료! finish 처리후")
+                        print("구매 완료! finish 처리후 \(transaction)")
                     }
                 case .unverified(let transactionId, let productId):
                     print("구매 완료, 영수증 검증되지 않았습니다. transactionId: \(transactionId), productId: \(productId)")
@@ -166,8 +168,17 @@ class StoreViewModel: ObservableObject {
                     print("sharing : 13+ Available")
                 } else if lower >= 5 {
                     print("sharing : 5+ Available")
+                } else {
+                    print("unknown state")
                 }
                 
+                print("lower value \(lower) upper value \(range.upperBound ?? 0)")
+                                
+                if let declaration = range.ageRangeDeclaration {
+                    print("declaraion: \(declaration)")
+                } else {
+                    print("declaraion: unknown")
+                }
             case .declinedSharing:
                 print("declined sharing")
             @unknown default:
@@ -184,6 +195,102 @@ class StoreViewModel: ObservableObject {
             }
         } catch {
             print("unexpected error: \(error.localizedDescription)")
+        }
+    }
+
+    //MARK: - PermissionKit (NTBaseFramework 경유)
+
+    /// 보호자 응답 리스너는 앱 수명 동안 1회만 시작하면 된다(응답은 나중에 도착 가능).
+    private var isPermissionListenerStarted = false
+
+    /// 응답(승인/거부) 구독 시작. 어떤 ask보다 먼저, 1회.
+    func startPermissionListenerIfNeeded() {
+        guard !isPermissionListenerStarted else { return }
+        isPermissionListenerStarted = true
+        NTBaseManager.startPermissionResponseListener { json in
+            // 응답은 JSON 문자열. 예: {"code":"APPROVED","topic":"COMMUNICATION","handle":"test_user_42",...}
+            print("[PermissionKit] response = \(json)")
+        }
+        print("[PermissionKit] response listener started")
+    }
+
+    /// 커뮤니케이션(예: 채팅) 권한 요청 테스트.
+    /// 재요청 방지를 위해 isKnownHandle로 먼저 확인 → 미승인일 때만 ask.
+    ///
+    /// ⚠️ 커뮤니케이션 e2e 성공을 위한 사전 환경 체크리스트
+    ///   (아래가 안 갖춰지면 started=true 이후 전송 단계에서
+    ///    "Contact syncing is not set up" 오류로 실패한다. 핸들 종류(custom)와는 무관.)
+    ///
+    ///   1. iOS 26.2+ **실기기** (시뮬레이터는 iMessage/Family Sharing 승인 미지원)
+    ///   2. **Family Sharing 아동 계정**으로 로그인된 기기
+    ///   3. 설정 > 스크린타임 > **커뮤니케이션 제한(Communication Limits)** 활성화
+    ///   4. 설정에서 **연락처 동기화(Contact Syncing)** 구성 (오류 메시지가 안내하는 항목)
+    ///   5. **iMessage** 로그인 (승인 요청이 iMessage로 보호자에게 전송됨)
+    ///   6. 승인할 **보호자 기기** (Family Sharing 그룹의 부모/보호자)
+    ///
+    ///   위가 갖춰지면: started=true → 보호자에게 승인 요청 전송 →
+    ///   보호자 응답 시 startResponseListener로 JSON 도착
+    ///   예: {"code":"APPROVED","topic":"COMMUNICATION","handle":"test_user_42","action":"chat",...}
+    ///
+    ///   참고: SignificantAppUpdate는 메시지 전송이 필요 없어 위 환경 없이도 응답까지 온다.
+    func onRequestCommunicationPermission(presenter: UIViewController) {
+        startPermissionListenerIfNeeded()
+
+        let handle = "test_user_42"   // custom(2)
+        NTBaseManager.isCommunicationHandleKnown(handle: handle as NSString, kind: 2) { known in
+            print("[PermissionKit] isKnownHandle(\(handle)) = \(known)")
+            guard !known else {
+                print("[PermissionKit] 이미 승인된 상대 → ask 생략")
+                return
+            }
+            // action 1 = chat
+            NTBaseManager.askCommunicationPermission(
+                handle: handle as NSString,
+                kind: 2,
+                action: 1,
+                displayName: "TestFriend" as NSString,
+                presentingViewController: presenter
+            ) { started, error in
+                print("[PermissionKit] askCommunication started=\(started), error=\(error?.localizedDescription ?? "nil")")
+            }
+        }
+    }
+
+    /// 중대 앱 변경 동의 요청 테스트.
+    func onRequestSignificantAppUpdatePermission(presenter: UIViewController) {
+        startPermissionListenerIfNeeded()
+        NTBaseManager.askSignificantAppUpdatePermission(
+            description: "This update adds video calling and location sharing." as NSString,
+            presentingViewController: presenter
+        ) { started, error in
+            print("[PermissionKit] askSignificantAppUpdate started=\(started), error=\(error?.localizedDescription ?? "nil")")
+        }
+    }
+
+    //MARK: - GameCenter Sign in
+    func authenticateGameCenter() {
+        let localPlayer = GKLocalPlayer.local
+        
+        localPlayer.authenticateHandler = { (viewController, error) in
+            if let viewController = viewController {
+                UIApplication.shared.connectedScenes
+                    .compactMap { $0 as? UIWindowScene }
+                    .first?.windows.first?.rootViewController?
+                    .present(viewController, animated: true)
+                return
+            }
+            
+            if let error = error {
+                print("게임센터 로그인 실패: \(error.localizedDescription)")
+                return
+            }
+            
+            if localPlayer.isAuthenticated {
+                print("게임센터 로그인 성공: \(localPlayer.displayName)")
+                print("Player ID: \(localPlayer.gamePlayerID)")
+            } else {
+                print("게임센터 로그인 취소됨")
+            }
         }
     }
     

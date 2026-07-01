@@ -1,0 +1,5220 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "NTBaseFramework",
+    "printedName": "NTBaseFramework",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NTWindowProvider",
+        "printedName": "NTWindowProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "keyWindow",
+            "printedName": "keyWindow()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIWindow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIWindow",
+                    "printedName": "UIKit.UIWindow",
+                    "usr": "c:objc(cs)UIWindow"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTWindowProvider(cm)keyWindow",
+            "mangledName": "$s15NTBaseFramework16NTWindowProviderC9keyWindowSo8UIWindowCSgyFZ",
+            "moduleName": "NTBaseFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "topMostViewController",
+            "printedName": "topMostViewController()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTWindowProvider(cm)topMostViewController",
+            "mangledName": "$s15NTBaseFramework16NTWindowProviderC21topMostViewControllerSo06UIViewH0CSgyFZ",
+            "moduleName": "NTBaseFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NTWindowProvider",
+                "printedName": "NTBaseFramework.NTWindowProvider",
+                "usr": "c:@M@NTBaseFramework@objc(cs)NTWindowProvider"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTWindowProvider(im)init",
+            "mangledName": "$s15NTBaseFramework16NTWindowProviderCACycfc",
+            "moduleName": "NTBaseFramework",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NTBaseFramework@objc(cs)NTWindowProvider",
+        "mangledName": "$s15NTBaseFramework16NTWindowProviderC",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DeclaredAgeRange",
+        "printedName": "DeclaredAgeRange",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NTAgeRangeManager",
+        "printedName": "NTAgeRangeManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isEligible",
+            "printedName": "isEligible(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTAgeRangeManager(im)isEligibleWithCompletion:",
+            "mangledName": "$s15NTBaseFramework17NTAgeRangeManagerC10isEligible10completionyySb_So7NSErrorCSgtc_tF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestDeclaredAgeRange",
+            "printedName": "requestDeclaredAgeRange(ageGate1:ageGate2:ageGate3:presentingViewController:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSString, Foundation.NSNumber?, Foundation.NSNumber?, Foundation.NSString?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.NSString, Foundation.NSNumber?, Foundation.NSNumber?, Foundation.NSString?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSString",
+                        "printedName": "Foundation.NSString",
+                        "usr": "c:objc(cs)NSString"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSNumber?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSNumber",
+                            "printedName": "Foundation.NSNumber",
+                            "usr": "c:objc(cs)NSNumber"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSNumber?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSNumber",
+                            "printedName": "Foundation.NSNumber",
+                            "usr": "c:objc(cs)NSNumber"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSString?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSString",
+                            "printedName": "Foundation.NSString",
+                            "usr": "c:objc(cs)NSString"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTAgeRangeManager(im)requestDeclaredAgeRangeWithAgeGate1:ageGate2:ageGate3:presentingViewController:completion:",
+            "mangledName": "$s15NTBaseFramework17NTAgeRangeManagerC018requestDeclaredAgeD08ageGate10I5Gate20I5Gate324presentingViewController10completionySi_S2iSo06UIViewO0CySo8NSStringC_So8NSNumberCSgApMSgSo7NSErrorCSgtctF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NTAgeRangeManager",
+                "printedName": "NTBaseFramework.NTAgeRangeManager",
+                "usr": "c:@M@NTBaseFramework@objc(cs)NTAgeRangeManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTAgeRangeManager(im)init",
+            "mangledName": "$s15NTBaseFramework17NTAgeRangeManagerCACycfc",
+            "moduleName": "NTBaseFramework",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NTBaseFramework@objc(cs)NTAgeRangeManager",
+        "mangledName": "$s15NTBaseFramework17NTAgeRangeManagerC",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NTAgeRangeResultCode",
+        "printedName": "NTAgeRangeResultCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sharing",
+            "printedName": "sharing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTAgeRangeResultCode.Type) -> NTBaseFramework.NTAgeRangeResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTAgeRangeResultCode",
+                    "printedName": "NTBaseFramework.NTAgeRangeResultCode",
+                    "usr": "c:@M@NTBaseFramework@E@NTAgeRangeResultCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTAgeRangeResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTAgeRangeResultCode",
+                        "printedName": "NTBaseFramework.NTAgeRangeResultCode",
+                        "usr": "c:@M@NTBaseFramework@E@NTAgeRangeResultCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTAgeRangeResultCode@NTAgeRangeResultCodeSharing",
+            "mangledName": "$s15NTBaseFramework20NTAgeRangeResultCodeO7sharingyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "declined",
+            "printedName": "declined",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTAgeRangeResultCode.Type) -> NTBaseFramework.NTAgeRangeResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTAgeRangeResultCode",
+                    "printedName": "NTBaseFramework.NTAgeRangeResultCode",
+                    "usr": "c:@M@NTBaseFramework@E@NTAgeRangeResultCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTAgeRangeResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTAgeRangeResultCode",
+                        "printedName": "NTBaseFramework.NTAgeRangeResultCode",
+                        "usr": "c:@M@NTBaseFramework@E@NTAgeRangeResultCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTAgeRangeResultCode@NTAgeRangeResultCodeDeclined",
+            "mangledName": "$s15NTBaseFramework20NTAgeRangeResultCodeO8declinedyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "notSupported",
+            "printedName": "notSupported",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTAgeRangeResultCode.Type) -> NTBaseFramework.NTAgeRangeResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTAgeRangeResultCode",
+                    "printedName": "NTBaseFramework.NTAgeRangeResultCode",
+                    "usr": "c:@M@NTBaseFramework@E@NTAgeRangeResultCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTAgeRangeResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTAgeRangeResultCode",
+                        "printedName": "NTBaseFramework.NTAgeRangeResultCode",
+                        "usr": "c:@M@NTBaseFramework@E@NTAgeRangeResultCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTAgeRangeResultCode@NTAgeRangeResultCodeNotSupported",
+            "mangledName": "$s15NTBaseFramework20NTAgeRangeResultCodeO12notSupportedyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTAgeRangeResultCode.Type) -> NTBaseFramework.NTAgeRangeResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTAgeRangeResultCode",
+                    "printedName": "NTBaseFramework.NTAgeRangeResultCode",
+                    "usr": "c:@M@NTBaseFramework@E@NTAgeRangeResultCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTAgeRangeResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTAgeRangeResultCode",
+                        "printedName": "NTBaseFramework.NTAgeRangeResultCode",
+                        "usr": "c:@M@NTBaseFramework@E@NTAgeRangeResultCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTAgeRangeResultCode@NTAgeRangeResultCodeError",
+            "mangledName": "$s15NTBaseFramework20NTAgeRangeResultCodeO5erroryA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTAgeRangeResultCode.Type) -> NTBaseFramework.NTAgeRangeResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTAgeRangeResultCode",
+                    "printedName": "NTBaseFramework.NTAgeRangeResultCode",
+                    "usr": "c:@M@NTBaseFramework@E@NTAgeRangeResultCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTAgeRangeResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTAgeRangeResultCode",
+                        "printedName": "NTBaseFramework.NTAgeRangeResultCode",
+                        "usr": "c:@M@NTBaseFramework@E@NTAgeRangeResultCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTAgeRangeResultCode@NTAgeRangeResultCodeUnknown",
+            "mangledName": "$s15NTBaseFramework20NTAgeRangeResultCodeO7unknownyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "rawValueString",
+            "printedName": "rawValueString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NTBaseFramework20NTAgeRangeResultCodeO14rawValueStringSSvp",
+            "mangledName": "$s15NTBaseFramework20NTAgeRangeResultCodeO14rawValueStringSSvp",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NTBaseFramework20NTAgeRangeResultCodeO14rawValueStringSSvg",
+                "mangledName": "$s15NTBaseFramework20NTAgeRangeResultCodeO14rawValueStringSSvg",
+                "moduleName": "NTBaseFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NTBaseFramework.NTAgeRangeResultCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTAgeRangeResultCode",
+                    "printedName": "NTBaseFramework.NTAgeRangeResultCode",
+                    "usr": "c:@M@NTBaseFramework@E@NTAgeRangeResultCode"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15NTBaseFramework20NTAgeRangeResultCodeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s15NTBaseFramework20NTAgeRangeResultCodeO8rawValueACSgSi_tcfc",
+            "moduleName": "NTBaseFramework",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NTBaseFramework20NTAgeRangeResultCodeO8rawValueSivp",
+            "mangledName": "$s15NTBaseFramework20NTAgeRangeResultCodeO8rawValueSivp",
+            "moduleName": "NTBaseFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NTBaseFramework20NTAgeRangeResultCodeO8rawValueSivg",
+                "mangledName": "$s15NTBaseFramework20NTAgeRangeResultCodeO8rawValueSivg",
+                "moduleName": "NTBaseFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NTBaseFramework@E@NTAgeRangeResultCode",
+        "mangledName": "$s15NTBaseFramework20NTAgeRangeResultCodeO",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UserMessagingPlatform",
+        "printedName": "UserMessagingPlatform",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "ImplementationOnly",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NTConsentConfiguration",
+        "printedName": "NTConsentConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "debugGeography",
+            "printedName": "debugGeography",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NTDebugGeography",
+                "printedName": "NTBaseFramework.NTDebugGeography",
+                "usr": "c:@M@NTBaseFramework@E@NTDebugGeography"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentConfiguration(py)debugGeography",
+            "mangledName": "$s15NTBaseFramework22NTConsentConfigurationC14debugGeographyAA07NTDebugF0Ovp",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTDebugGeography",
+                    "printedName": "NTBaseFramework.NTDebugGeography",
+                    "usr": "c:@M@NTBaseFramework@E@NTDebugGeography"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentConfiguration(im)debugGeography",
+                "mangledName": "$s15NTBaseFramework22NTConsentConfigurationC14debugGeographyAA07NTDebugF0Ovg",
+                "moduleName": "NTBaseFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "testDeviceIds",
+            "printedName": "testDeviceIds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentConfiguration(py)testDeviceIds",
+            "mangledName": "$s15NTBaseFramework22NTConsentConfigurationC13testDeviceIdsSaySSGvp",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentConfiguration(im)testDeviceIds",
+                "mangledName": "$s15NTBaseFramework22NTConsentConfigurationC13testDeviceIdsSaySSGvg",
+                "moduleName": "NTBaseFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tagForUnderAgeOfConsent",
+            "printedName": "tagForUnderAgeOfConsent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentConfiguration(py)tagForUnderAgeOfConsent",
+            "mangledName": "$s15NTBaseFramework22NTConsentConfigurationC23tagForUnderAgeOfConsentSbvp",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentConfiguration(im)tagForUnderAgeOfConsent",
+                "mangledName": "$s15NTBaseFramework22NTConsentConfigurationC23tagForUnderAgeOfConsentSbvg",
+                "moduleName": "NTBaseFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(debugGeography:testDeviceIds:tagForUnderAgeOfConsent:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NTConsentConfiguration",
+                "printedName": "NTBaseFramework.NTConsentConfiguration",
+                "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NTDebugGeography",
+                "printedName": "NTBaseFramework.NTDebugGeography",
+                "hasDefaultArg": true,
+                "usr": "c:@M@NTBaseFramework@E@NTDebugGeography"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentConfiguration(im)initWithDebugGeography:testDeviceIds:tagForUnderAgeOfConsent:",
+            "mangledName": "$s15NTBaseFramework22NTConsentConfigurationC14debugGeography13testDeviceIds23tagForUnderAgeOfConsentAcA07NTDebugF0O_SaySSGSbtcfc",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NTConsentConfiguration",
+                "printedName": "NTBaseFramework.NTConsentConfiguration",
+                "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentConfiguration(im)init",
+            "mangledName": "$s15NTBaseFramework22NTConsentConfigurationCACycfc",
+            "moduleName": "NTBaseFramework",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentConfiguration",
+        "mangledName": "$s15NTBaseFramework22NTConsentConfigurationC",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NTConsentManager",
+        "printedName": "NTConsentManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "canRequestAds",
+            "printedName": "canRequestAds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentManager(py)canRequestAds",
+            "mangledName": "$s15NTBaseFramework16NTConsentManagerC13canRequestAdsSbvp",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentManager(im)canRequestAds",
+                "mangledName": "$s15NTBaseFramework16NTConsentManagerC13canRequestAdsSbvg",
+                "moduleName": "NTBaseFramework",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NTConsentConfiguration",
+                "printedName": "NTBaseFramework.NTConsentConfiguration",
+                "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentConfiguration"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentManager(im)configure:",
+            "mangledName": "$s15NTBaseFramework16NTConsentManagerC9configureyyAA0C13ConfigurationCF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestIfNeeded",
+            "printedName": "requestIfNeeded(presentingViewController:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTConsentStatus, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(NTBaseFramework.NTConsentStatus, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTConsentStatus",
+                        "printedName": "NTBaseFramework.NTConsentStatus",
+                        "usr": "c:@M@NTBaseFramework@E@NTConsentStatus"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentManager(im)requestIfNeededWithPresentingViewController:completion:",
+            "mangledName": "$s15NTBaseFramework16NTConsentManagerC15requestIfNeeded24presentingViewController10completionySo06UIViewJ0C_yAA0C6StatusO_So7NSErrorCSgtctF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetForDebug",
+            "printedName": "resetForDebug(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentManager(im)resetForDebugWithCompletion:",
+            "mangledName": "$s15NTBaseFramework16NTConsentManagerC13resetForDebug10completionyySo7NSErrorCSgc_tF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NTConsentManager",
+                "printedName": "NTBaseFramework.NTConsentManager",
+                "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentManager(im)init",
+            "mangledName": "$s15NTBaseFramework16NTConsentManagerCACycfc",
+            "moduleName": "NTBaseFramework",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentManager",
+        "mangledName": "$s15NTBaseFramework16NTConsentManagerC",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NTConsentStatus",
+        "printedName": "NTConsentStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTConsentStatus.Type) -> NTBaseFramework.NTConsentStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTConsentStatus",
+                    "printedName": "NTBaseFramework.NTConsentStatus",
+                    "usr": "c:@M@NTBaseFramework@E@NTConsentStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTConsentStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTConsentStatus",
+                        "printedName": "NTBaseFramework.NTConsentStatus",
+                        "usr": "c:@M@NTBaseFramework@E@NTConsentStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTConsentStatus@NTConsentStatusUnknown",
+            "mangledName": "$s15NTBaseFramework15NTConsentStatusO7unknownyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "required",
+            "printedName": "required",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTConsentStatus.Type) -> NTBaseFramework.NTConsentStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTConsentStatus",
+                    "printedName": "NTBaseFramework.NTConsentStatus",
+                    "usr": "c:@M@NTBaseFramework@E@NTConsentStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTConsentStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTConsentStatus",
+                        "printedName": "NTBaseFramework.NTConsentStatus",
+                        "usr": "c:@M@NTBaseFramework@E@NTConsentStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTConsentStatus@NTConsentStatusRequired",
+            "mangledName": "$s15NTBaseFramework15NTConsentStatusO8requiredyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "notRequired",
+            "printedName": "notRequired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTConsentStatus.Type) -> NTBaseFramework.NTConsentStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTConsentStatus",
+                    "printedName": "NTBaseFramework.NTConsentStatus",
+                    "usr": "c:@M@NTBaseFramework@E@NTConsentStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTConsentStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTConsentStatus",
+                        "printedName": "NTBaseFramework.NTConsentStatus",
+                        "usr": "c:@M@NTBaseFramework@E@NTConsentStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTConsentStatus@NTConsentStatusNotRequired",
+            "mangledName": "$s15NTBaseFramework15NTConsentStatusO11notRequiredyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "obtained",
+            "printedName": "obtained",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTConsentStatus.Type) -> NTBaseFramework.NTConsentStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTConsentStatus",
+                    "printedName": "NTBaseFramework.NTConsentStatus",
+                    "usr": "c:@M@NTBaseFramework@E@NTConsentStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTConsentStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTConsentStatus",
+                        "printedName": "NTBaseFramework.NTConsentStatus",
+                        "usr": "c:@M@NTBaseFramework@E@NTConsentStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTConsentStatus@NTConsentStatusObtained",
+            "mangledName": "$s15NTBaseFramework15NTConsentStatusO8obtainedyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "rawValueString",
+            "printedName": "rawValueString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NTBaseFramework15NTConsentStatusO14rawValueStringSSvp",
+            "mangledName": "$s15NTBaseFramework15NTConsentStatusO14rawValueStringSSvp",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NTBaseFramework15NTConsentStatusO14rawValueStringSSvg",
+                "mangledName": "$s15NTBaseFramework15NTConsentStatusO14rawValueStringSSvg",
+                "moduleName": "NTBaseFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NTBaseFramework.NTConsentStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTConsentStatus",
+                    "printedName": "NTBaseFramework.NTConsentStatus",
+                    "usr": "c:@M@NTBaseFramework@E@NTConsentStatus"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15NTBaseFramework15NTConsentStatusO8rawValueACSgSi_tcfc",
+            "mangledName": "$s15NTBaseFramework15NTConsentStatusO8rawValueACSgSi_tcfc",
+            "moduleName": "NTBaseFramework",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NTBaseFramework15NTConsentStatusO8rawValueSivp",
+            "mangledName": "$s15NTBaseFramework15NTConsentStatusO8rawValueSivp",
+            "moduleName": "NTBaseFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NTBaseFramework15NTConsentStatusO8rawValueSivg",
+                "mangledName": "$s15NTBaseFramework15NTConsentStatusO8rawValueSivg",
+                "moduleName": "NTBaseFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NTBaseFramework@E@NTConsentStatus",
+        "mangledName": "$s15NTBaseFramework15NTConsentStatusO",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NTDebugGeography",
+        "printedName": "NTDebugGeography",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "disabled",
+            "printedName": "disabled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTDebugGeography.Type) -> NTBaseFramework.NTDebugGeography",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTDebugGeography",
+                    "printedName": "NTBaseFramework.NTDebugGeography",
+                    "usr": "c:@M@NTBaseFramework@E@NTDebugGeography"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTDebugGeography.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTDebugGeography",
+                        "printedName": "NTBaseFramework.NTDebugGeography",
+                        "usr": "c:@M@NTBaseFramework@E@NTDebugGeography"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTDebugGeography@NTDebugGeographyDisabled",
+            "mangledName": "$s15NTBaseFramework16NTDebugGeographyO8disabledyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "eea",
+            "printedName": "eea",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTDebugGeography.Type) -> NTBaseFramework.NTDebugGeography",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTDebugGeography",
+                    "printedName": "NTBaseFramework.NTDebugGeography",
+                    "usr": "c:@M@NTBaseFramework@E@NTDebugGeography"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTDebugGeography.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTDebugGeography",
+                        "printedName": "NTBaseFramework.NTDebugGeography",
+                        "usr": "c:@M@NTBaseFramework@E@NTDebugGeography"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTDebugGeography@NTDebugGeographyEea",
+            "mangledName": "$s15NTBaseFramework16NTDebugGeographyO3eeayA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "notEEA",
+            "printedName": "notEEA",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTDebugGeography.Type) -> NTBaseFramework.NTDebugGeography",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTDebugGeography",
+                    "printedName": "NTBaseFramework.NTDebugGeography",
+                    "usr": "c:@M@NTBaseFramework@E@NTDebugGeography"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTDebugGeography.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTDebugGeography",
+                        "printedName": "NTBaseFramework.NTDebugGeography",
+                        "usr": "c:@M@NTBaseFramework@E@NTDebugGeography"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTDebugGeography@NTDebugGeographyNotEEA",
+            "mangledName": "$s15NTBaseFramework16NTDebugGeographyO6notEEAyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "regulatedUSState",
+            "printedName": "regulatedUSState",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTDebugGeography.Type) -> NTBaseFramework.NTDebugGeography",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTDebugGeography",
+                    "printedName": "NTBaseFramework.NTDebugGeography",
+                    "usr": "c:@M@NTBaseFramework@E@NTDebugGeography"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTDebugGeography.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTDebugGeography",
+                        "printedName": "NTBaseFramework.NTDebugGeography",
+                        "usr": "c:@M@NTBaseFramework@E@NTDebugGeography"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTDebugGeography@NTDebugGeographyRegulatedUSState",
+            "mangledName": "$s15NTBaseFramework16NTDebugGeographyO16regulatedUSStateyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "rawValueString",
+            "printedName": "rawValueString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NTBaseFramework16NTDebugGeographyO14rawValueStringSSvp",
+            "mangledName": "$s15NTBaseFramework16NTDebugGeographyO14rawValueStringSSvp",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NTBaseFramework16NTDebugGeographyO14rawValueStringSSvg",
+                "mangledName": "$s15NTBaseFramework16NTDebugGeographyO14rawValueStringSSvg",
+                "moduleName": "NTBaseFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NTBaseFramework.NTDebugGeography?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTDebugGeography",
+                    "printedName": "NTBaseFramework.NTDebugGeography",
+                    "usr": "c:@M@NTBaseFramework@E@NTDebugGeography"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15NTBaseFramework16NTDebugGeographyO8rawValueACSgSi_tcfc",
+            "mangledName": "$s15NTBaseFramework16NTDebugGeographyO8rawValueACSgSi_tcfc",
+            "moduleName": "NTBaseFramework",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NTBaseFramework16NTDebugGeographyO8rawValueSivp",
+            "mangledName": "$s15NTBaseFramework16NTDebugGeographyO8rawValueSivp",
+            "moduleName": "NTBaseFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NTBaseFramework16NTDebugGeographyO8rawValueSivg",
+                "mangledName": "$s15NTBaseFramework16NTDebugGeographyO8rawValueSivg",
+                "moduleName": "NTBaseFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NTBaseFramework@E@NTDebugGeography",
+        "mangledName": "$s15NTBaseFramework16NTDebugGeographyO",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NTPrivacyOptionRequirementStatus",
+        "printedName": "NTPrivacyOptionRequirementStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTPrivacyOptionRequirementStatus.Type) -> NTBaseFramework.NTPrivacyOptionRequirementStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTPrivacyOptionRequirementStatus",
+                    "printedName": "NTBaseFramework.NTPrivacyOptionRequirementStatus",
+                    "usr": "c:@M@NTBaseFramework@E@NTPrivacyOptionRequirementStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTPrivacyOptionRequirementStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTPrivacyOptionRequirementStatus",
+                        "printedName": "NTBaseFramework.NTPrivacyOptionRequirementStatus",
+                        "usr": "c:@M@NTBaseFramework@E@NTPrivacyOptionRequirementStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTPrivacyOptionRequirementStatus@NTPrivacyOptionRequirementStatusUnknown",
+            "mangledName": "$s15NTBaseFramework32NTPrivacyOptionRequirementStatusO7unknownyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "notRequired",
+            "printedName": "notRequired",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTPrivacyOptionRequirementStatus.Type) -> NTBaseFramework.NTPrivacyOptionRequirementStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTPrivacyOptionRequirementStatus",
+                    "printedName": "NTBaseFramework.NTPrivacyOptionRequirementStatus",
+                    "usr": "c:@M@NTBaseFramework@E@NTPrivacyOptionRequirementStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTPrivacyOptionRequirementStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTPrivacyOptionRequirementStatus",
+                        "printedName": "NTBaseFramework.NTPrivacyOptionRequirementStatus",
+                        "usr": "c:@M@NTBaseFramework@E@NTPrivacyOptionRequirementStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTPrivacyOptionRequirementStatus@NTPrivacyOptionRequirementStatusNotRequired",
+            "mangledName": "$s15NTBaseFramework32NTPrivacyOptionRequirementStatusO11notRequiredyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "required",
+            "printedName": "required",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTPrivacyOptionRequirementStatus.Type) -> NTBaseFramework.NTPrivacyOptionRequirementStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTPrivacyOptionRequirementStatus",
+                    "printedName": "NTBaseFramework.NTPrivacyOptionRequirementStatus",
+                    "usr": "c:@M@NTBaseFramework@E@NTPrivacyOptionRequirementStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTPrivacyOptionRequirementStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTPrivacyOptionRequirementStatus",
+                        "printedName": "NTBaseFramework.NTPrivacyOptionRequirementStatus",
+                        "usr": "c:@M@NTBaseFramework@E@NTPrivacyOptionRequirementStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTPrivacyOptionRequirementStatus@NTPrivacyOptionRequirementStatusRequired",
+            "mangledName": "$s15NTBaseFramework32NTPrivacyOptionRequirementStatusO8requiredyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "rawValueString",
+            "printedName": "rawValueString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NTBaseFramework32NTPrivacyOptionRequirementStatusO14rawValueStringSSvp",
+            "mangledName": "$s15NTBaseFramework32NTPrivacyOptionRequirementStatusO14rawValueStringSSvp",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NTBaseFramework32NTPrivacyOptionRequirementStatusO14rawValueStringSSvg",
+                "mangledName": "$s15NTBaseFramework32NTPrivacyOptionRequirementStatusO14rawValueStringSSvg",
+                "moduleName": "NTBaseFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NTBaseFramework.NTPrivacyOptionRequirementStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTPrivacyOptionRequirementStatus",
+                    "printedName": "NTBaseFramework.NTPrivacyOptionRequirementStatus",
+                    "usr": "c:@M@NTBaseFramework@E@NTPrivacyOptionRequirementStatus"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15NTBaseFramework32NTPrivacyOptionRequirementStatusO8rawValueACSgSi_tcfc",
+            "mangledName": "$s15NTBaseFramework32NTPrivacyOptionRequirementStatusO8rawValueACSgSi_tcfc",
+            "moduleName": "NTBaseFramework",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NTBaseFramework32NTPrivacyOptionRequirementStatusO8rawValueSivp",
+            "mangledName": "$s15NTBaseFramework32NTPrivacyOptionRequirementStatusO8rawValueSivp",
+            "moduleName": "NTBaseFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NTBaseFramework32NTPrivacyOptionRequirementStatusO8rawValueSivg",
+                "mangledName": "$s15NTBaseFramework32NTPrivacyOptionRequirementStatusO8rawValueSivg",
+                "moduleName": "NTBaseFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NTBaseFramework@E@NTPrivacyOptionRequirementStatus",
+        "mangledName": "$s15NTBaseFramework32NTPrivacyOptionRequirementStatusO",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PermissionKit",
+        "printedName": "PermissionKit",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NTPermissionManager",
+        "printedName": "NTPermissionManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "startResponseListener",
+            "printedName": "startResponseListener(onResponse:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSString) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTPermissionManager(im)startResponseListenerOnResponse:",
+            "mangledName": "$s15NTBaseFramework19NTPermissionManagerC21startResponseListener02onF0yySo8NSStringCc_tF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopResponseListener",
+            "printedName": "stopResponseListener()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTPermissionManager(im)stopResponseListener",
+            "mangledName": "$s15NTBaseFramework19NTPermissionManagerC20stopResponseListeneryyF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "askSignificantAppUpdate",
+            "printedName": "askSignificantAppUpdate(description:presentingViewController:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTPermissionManager(im)askSignificantAppUpdateWithDescription:presentingViewController:completion:",
+            "mangledName": "$s15NTBaseFramework19NTPermissionManagerC23askSignificantAppUpdate11description24presentingViewController10completionySS_So06UIViewL0CySb_So7NSErrorCSgtctF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "askCommunication",
+            "printedName": "askCommunication(handle:kind:action:displayName:presentingViewController:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTPermissionManager(im)askCommunicationWithHandle:kind:action:displayName:presentingViewController:completion:",
+            "mangledName": "$s15NTBaseFramework19NTPermissionManagerC16askCommunication6handle4kind6action11displayName24presentingViewController10completionySS_S2iSSSgSo06UIViewN0CySb_So7NSErrorCSgtctF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isKnownHandle",
+            "printedName": "isKnownHandle(handle:kind:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTPermissionManager(im)isKnownHandleWithHandle:kind:completion:",
+            "mangledName": "$s15NTBaseFramework19NTPermissionManagerC13isKnownHandle6handle4kind10completionySS_SiySbctF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NTPermissionManager",
+                "printedName": "NTBaseFramework.NTPermissionManager",
+                "usr": "c:@M@NTBaseFramework@objc(cs)NTPermissionManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTPermissionManager(im)init",
+            "mangledName": "$s15NTBaseFramework19NTPermissionManagerCACycfc",
+            "moduleName": "NTBaseFramework",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NTBaseFramework@objc(cs)NTPermissionManager",
+        "mangledName": "$s15NTBaseFramework19NTPermissionManagerC",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NTPermissionResultCode",
+        "printedName": "NTPermissionResultCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "approved",
+            "printedName": "approved",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTPermissionResultCode.Type) -> NTBaseFramework.NTPermissionResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTPermissionResultCode",
+                    "printedName": "NTBaseFramework.NTPermissionResultCode",
+                    "usr": "c:@M@NTBaseFramework@E@NTPermissionResultCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTPermissionResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTPermissionResultCode",
+                        "printedName": "NTBaseFramework.NTPermissionResultCode",
+                        "usr": "c:@M@NTBaseFramework@E@NTPermissionResultCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTPermissionResultCode@NTPermissionResultCodeApproved",
+            "mangledName": "$s15NTBaseFramework22NTPermissionResultCodeO8approvedyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "declined",
+            "printedName": "declined",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTPermissionResultCode.Type) -> NTBaseFramework.NTPermissionResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTPermissionResultCode",
+                    "printedName": "NTBaseFramework.NTPermissionResultCode",
+                    "usr": "c:@M@NTBaseFramework@E@NTPermissionResultCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTPermissionResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTPermissionResultCode",
+                        "printedName": "NTBaseFramework.NTPermissionResultCode",
+                        "usr": "c:@M@NTBaseFramework@E@NTPermissionResultCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTPermissionResultCode@NTPermissionResultCodeDeclined",
+            "mangledName": "$s15NTBaseFramework22NTPermissionResultCodeO8declinedyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTPermissionResultCode.Type) -> NTBaseFramework.NTPermissionResultCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTPermissionResultCode",
+                    "printedName": "NTBaseFramework.NTPermissionResultCode",
+                    "usr": "c:@M@NTBaseFramework@E@NTPermissionResultCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTPermissionResultCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTPermissionResultCode",
+                        "printedName": "NTBaseFramework.NTPermissionResultCode",
+                        "usr": "c:@M@NTBaseFramework@E@NTPermissionResultCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTPermissionResultCode@NTPermissionResultCodeUnknown",
+            "mangledName": "$s15NTBaseFramework22NTPermissionResultCodeO7unknownyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "rawValueString",
+            "printedName": "rawValueString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NTBaseFramework22NTPermissionResultCodeO14rawValueStringSSvp",
+            "mangledName": "$s15NTBaseFramework22NTPermissionResultCodeO14rawValueStringSSvp",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NTBaseFramework22NTPermissionResultCodeO14rawValueStringSSvg",
+                "mangledName": "$s15NTBaseFramework22NTPermissionResultCodeO14rawValueStringSSvg",
+                "moduleName": "NTBaseFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NTBaseFramework.NTPermissionResultCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTPermissionResultCode",
+                    "printedName": "NTBaseFramework.NTPermissionResultCode",
+                    "usr": "c:@M@NTBaseFramework@E@NTPermissionResultCode"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15NTBaseFramework22NTPermissionResultCodeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s15NTBaseFramework22NTPermissionResultCodeO8rawValueACSgSi_tcfc",
+            "moduleName": "NTBaseFramework",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NTBaseFramework22NTPermissionResultCodeO8rawValueSivp",
+            "mangledName": "$s15NTBaseFramework22NTPermissionResultCodeO8rawValueSivp",
+            "moduleName": "NTBaseFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NTBaseFramework22NTPermissionResultCodeO8rawValueSivg",
+                "mangledName": "$s15NTBaseFramework22NTPermissionResultCodeO8rawValueSivg",
+                "moduleName": "NTBaseFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NTBaseFramework@E@NTPermissionResultCode",
+        "mangledName": "$s15NTBaseFramework22NTPermissionResultCodeO",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NTPermissionTopic",
+        "printedName": "NTPermissionTopic",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "significantAppUpdate",
+            "printedName": "significantAppUpdate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTPermissionTopic.Type) -> NTBaseFramework.NTPermissionTopic",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTPermissionTopic",
+                    "printedName": "NTBaseFramework.NTPermissionTopic",
+                    "usr": "c:@M@NTBaseFramework@E@NTPermissionTopic"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTPermissionTopic.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTPermissionTopic",
+                        "printedName": "NTBaseFramework.NTPermissionTopic",
+                        "usr": "c:@M@NTBaseFramework@E@NTPermissionTopic"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTPermissionTopic@NTPermissionTopicSignificantAppUpdate",
+            "mangledName": "$s15NTBaseFramework17NTPermissionTopicO20significantAppUpdateyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "communication",
+            "printedName": "communication",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.NTPermissionTopic.Type) -> NTBaseFramework.NTPermissionTopic",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTPermissionTopic",
+                    "printedName": "NTBaseFramework.NTPermissionTopic",
+                    "usr": "c:@M@NTBaseFramework@E@NTPermissionTopic"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.NTPermissionTopic.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NTPermissionTopic",
+                        "printedName": "NTBaseFramework.NTPermissionTopic",
+                        "usr": "c:@M@NTBaseFramework@E@NTPermissionTopic"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NTBaseFramework@E@NTPermissionTopic@NTPermissionTopicCommunication",
+            "mangledName": "$s15NTBaseFramework17NTPermissionTopicO13communicationyA2CmF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "rawValueString",
+            "printedName": "rawValueString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NTBaseFramework17NTPermissionTopicO14rawValueStringSSvp",
+            "mangledName": "$s15NTBaseFramework17NTPermissionTopicO14rawValueStringSSvp",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NTBaseFramework17NTPermissionTopicO14rawValueStringSSvg",
+                "mangledName": "$s15NTBaseFramework17NTPermissionTopicO14rawValueStringSSvg",
+                "moduleName": "NTBaseFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NTBaseFramework.NTPermissionTopic?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NTPermissionTopic",
+                    "printedName": "NTBaseFramework.NTPermissionTopic",
+                    "usr": "c:@M@NTBaseFramework@E@NTPermissionTopic"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15NTBaseFramework17NTPermissionTopicO8rawValueACSgSi_tcfc",
+            "mangledName": "$s15NTBaseFramework17NTPermissionTopicO8rawValueACSgSi_tcfc",
+            "moduleName": "NTBaseFramework",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15NTBaseFramework17NTPermissionTopicO8rawValueSivp",
+            "mangledName": "$s15NTBaseFramework17NTPermissionTopicO8rawValueSivp",
+            "moduleName": "NTBaseFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15NTBaseFramework17NTPermissionTopicO8rawValueSivg",
+                "mangledName": "$s15NTBaseFramework17NTPermissionTopicO8rawValueSivg",
+                "moduleName": "NTBaseFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NTBaseFramework@E@NTPermissionTopic",
+        "mangledName": "$s15NTBaseFramework17NTPermissionTopicO",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthFlowResult",
+        "printedName": "AuthFlowResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.AuthFlowResult.Type) -> (Swift.String) -> NTBaseFramework.AuthFlowResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> NTBaseFramework.AuthFlowResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthFlowResult",
+                        "printedName": "NTBaseFramework.AuthFlowResult",
+                        "usr": "s:15NTBaseFramework14AuthFlowResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(payload: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.AuthFlowResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthFlowResult",
+                        "printedName": "NTBaseFramework.AuthFlowResult",
+                        "usr": "s:15NTBaseFramework14AuthFlowResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15NTBaseFramework14AuthFlowResultO7successyACSS_tcACmF",
+            "mangledName": "$s15NTBaseFramework14AuthFlowResultO7successyACSS_tcACmF",
+            "moduleName": "NTBaseFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "failure",
+            "printedName": "failure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.AuthFlowResult.Type) -> (Swift.String) -> NTBaseFramework.AuthFlowResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> NTBaseFramework.AuthFlowResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthFlowResult",
+                        "printedName": "NTBaseFramework.AuthFlowResult",
+                        "usr": "s:15NTBaseFramework14AuthFlowResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(message: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NTBaseFramework.AuthFlowResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthFlowResult",
+                        "printedName": "NTBaseFramework.AuthFlowResult",
+                        "usr": "s:15NTBaseFramework14AuthFlowResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15NTBaseFramework14AuthFlowResultO7failureyACSS_tcACmF",
+            "mangledName": "$s15NTBaseFramework14AuthFlowResultO7failureyACSS_tcACmF",
+            "moduleName": "NTBaseFramework"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15NTBaseFramework14AuthFlowResultO",
+        "mangledName": "$s15NTBaseFramework14AuthFlowResultO",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AuthenticationProvider",
+        "printedName": "AuthenticationProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "startAuthenticationFlow",
+            "printedName": "startAuthenticationFlow(authURL:callbackScheme:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.AuthFlowResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthFlowResult",
+                    "printedName": "NTBaseFramework.AuthFlowResult",
+                    "usr": "s:15NTBaseFramework14AuthFlowResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NTBaseFramework22AuthenticationProviderP05startC4Flow7authURL14callbackScheme10completionySS_SSyAA04AuthF6ResultOctF",
+            "mangledName": "$s15NTBaseFramework22AuthenticationProviderP05startC4Flow7authURL14callbackScheme10completionySS_SSyAA04AuthF6ResultOctF",
+            "moduleName": "NTBaseFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : NTBaseFramework.AuthenticationProvider>",
+            "sugared_genericSig": "<Self where Self : NTBaseFramework.AuthenticationProvider>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15NTBaseFramework22AuthenticationProviderP",
+        "mangledName": "$s15NTBaseFramework22AuthenticationProviderP",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "SafariServices",
+        "printedName": "SafariServices",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NTWebAuthenticationProvider",
+        "printedName": "NTWebAuthenticationProvider",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NTWebAuthenticationProvider",
+                "printedName": "NTBaseFramework.NTWebAuthenticationProvider",
+                "usr": "c:@M@NTBaseFramework@objc(cs)NTWebAuthenticationProvider"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTWebAuthenticationProvider(im)init",
+            "mangledName": "$s15NTBaseFramework27NTWebAuthenticationProviderCACycfc",
+            "moduleName": "NTBaseFramework",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startAuthenticationFlow",
+            "printedName": "startAuthenticationFlow(authURL:callbackScheme:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.AuthFlowResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthFlowResult",
+                    "printedName": "NTBaseFramework.AuthFlowResult",
+                    "usr": "s:15NTBaseFramework14AuthFlowResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NTBaseFramework27NTWebAuthenticationProviderC05startD4Flow7authURL14callbackScheme10completionySS_SSyAA04AuthG6ResultOctF",
+            "mangledName": "$s15NTBaseFramework27NTWebAuthenticationProviderC05startD4Flow7authURL14callbackScheme10completionySS_SSyAA04AuthG6ResultOctF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NTBaseFramework@objc(cs)NTWebAuthenticationProvider",
+        "mangledName": "$s15NTBaseFramework27NTWebAuthenticationProviderC",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AuthenticationProvider",
+            "printedName": "AuthenticationProvider",
+            "usr": "s:15NTBaseFramework22AuthenticationProviderP",
+            "mangledName": "$s15NTBaseFramework22AuthenticationProviderP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebAuthenticationSessionCoordinator",
+        "printedName": "WebAuthenticationSessionCoordinator",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(provider:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WebAuthenticationSessionCoordinator",
+                "printedName": "NTBaseFramework.WebAuthenticationSessionCoordinator",
+                "usr": "s:15NTBaseFramework35WebAuthenticationSessionCoordinatorC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AuthenticationProvider",
+                "printedName": "any NTBaseFramework.AuthenticationProvider",
+                "hasDefaultArg": true,
+                "usr": "s:15NTBaseFramework22AuthenticationProviderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15NTBaseFramework35WebAuthenticationSessionCoordinatorC8providerAcA0D8Provider_p_tcfc",
+            "mangledName": "$s15NTBaseFramework35WebAuthenticationSessionCoordinatorC8providerAcA0D8Provider_p_tcfc",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start(authURL:callbackScheme:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NTBaseFramework.AuthFlowResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthFlowResult",
+                    "printedName": "NTBaseFramework.AuthFlowResult",
+                    "usr": "s:15NTBaseFramework14AuthFlowResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15NTBaseFramework35WebAuthenticationSessionCoordinatorC5start7authURL14callbackScheme10completionySS_SSyAA14AuthFlowResultOctF",
+            "mangledName": "$s15NTBaseFramework35WebAuthenticationSessionCoordinatorC5start7authURL14callbackScheme10completionySS_SSyAA14AuthFlowResultOctF",
+            "moduleName": "NTBaseFramework",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15NTBaseFramework35WebAuthenticationSessionCoordinatorC",
+        "mangledName": "$s15NTBaseFramework35WebAuthenticationSessionCoordinatorC",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "DeclaredAgeRange",
+        "printedName": "DeclaredAgeRange",
+        "declKind": "Import",
+        "moduleName": "NTBaseFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NTBaseManager",
+        "printedName": "NTBaseManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isEligibleForDeclaredAgeRange",
+            "printedName": "isEligibleForDeclaredAgeRange(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTBaseManager(cm)isEligibleForDeclaredAgeRangeWithCompletion:",
+            "mangledName": "$s15NTBaseFramework0A7ManagerC29isEligibleForDeclaredAgeRange10completionyySb_So7NSErrorCSgtc_tFZ",
+            "moduleName": "NTBaseFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestDeclaredAgeRange",
+            "printedName": "requestDeclaredAgeRange(ageGate1:ageGate2:ageGate3:presentingViewController:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSString, Foundation.NSNumber?, Foundation.NSNumber?, Foundation.NSString?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.NSString, Foundation.NSNumber?, Foundation.NSNumber?, Foundation.NSString?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSString",
+                        "printedName": "Foundation.NSString",
+                        "usr": "c:objc(cs)NSString"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSNumber?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSNumber",
+                            "printedName": "Foundation.NSNumber",
+                            "usr": "c:objc(cs)NSNumber"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSNumber?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSNumber",
+                            "printedName": "Foundation.NSNumber",
+                            "usr": "c:objc(cs)NSNumber"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSString?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSString",
+                            "printedName": "Foundation.NSString",
+                            "usr": "c:objc(cs)NSString"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTBaseManager(cm)requestDeclaredAgeRangeWithAgeGate1:ageGate2:ageGate3:presentingViewController:completion:",
+            "mangledName": "$s15NTBaseFramework0A7ManagerC23requestDeclaredAgeRange8ageGate10H5Gate20H5Gate324presentingViewController10completionySi_S2iSo06UIViewN0CySo8NSStringC_So8NSNumberCSgApMSgSo7NSErrorCSgtctFZ",
+            "moduleName": "NTBaseFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configureConsent",
+            "printedName": "configureConsent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NTConsentConfiguration",
+                "printedName": "NTBaseFramework.NTConsentConfiguration",
+                "usr": "c:@M@NTBaseFramework@objc(cs)NTConsentConfiguration"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTBaseManager(cm)configureConsent:",
+            "mangledName": "$s15NTBaseFramework0A7ManagerC16configureConsentyyAA22NTConsentConfigurationCFZ",
+            "moduleName": "NTBaseFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestConsentIfNeeded",
+            "printedName": "requestConsentIfNeeded(presentingViewController:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSString, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.NSString, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSString",
+                        "printedName": "Foundation.NSString",
+                        "usr": "c:objc(cs)NSString"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTBaseManager(cm)requestConsentIfNeededWithPresentingViewController:completion:",
+            "mangledName": "$s15NTBaseFramework0A7ManagerC22requestConsentIfNeeded24presentingViewController10completionySo06UIViewJ0C_ySo8NSStringC_So7NSErrorCSgtctFZ",
+            "moduleName": "NTBaseFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "canRequestAds",
+            "printedName": "canRequestAds()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTBaseManager(cm)canRequestAds",
+            "mangledName": "$s15NTBaseFramework0A7ManagerC13canRequestAdsSbyFZ",
+            "moduleName": "NTBaseFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetConsentForDebug",
+            "printedName": "resetConsentForDebug(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTBaseManager(cm)resetConsentForDebugWithCompletion:",
+            "mangledName": "$s15NTBaseFramework0A7ManagerC20resetConsentForDebug10completionyySo7NSErrorCSgc_tFZ",
+            "moduleName": "NTBaseFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startWebAuthentication",
+            "printedName": "startWebAuthentication(authURL:callbackScheme:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSString",
+                "printedName": "Foundation.NSString",
+                "usr": "c:objc(cs)NSString"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSString",
+                "printedName": "Foundation.NSString",
+                "usr": "c:objc(cs)NSString"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSString?, Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.NSString?, Swift.Bool)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSString?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSString",
+                            "printedName": "Foundation.NSString",
+                            "usr": "c:objc(cs)NSString"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTBaseManager(cm)startWebAuthenticationWithAuthURL:callbackScheme:completion:",
+            "mangledName": "$s15NTBaseFramework0A7ManagerC22startWebAuthentication7authURL14callbackScheme10completionySo8NSStringC_AIyAISg_SbtctFZ",
+            "moduleName": "NTBaseFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startPermissionResponseListener",
+            "printedName": "startPermissionResponseListener(onResponse:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSString) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTBaseManager(cm)startPermissionResponseListenerOnResponse:",
+            "mangledName": "$s15NTBaseFramework0A7ManagerC31startPermissionResponseListener02onF0yySo8NSStringCc_tFZ",
+            "moduleName": "NTBaseFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopPermissionResponseListener",
+            "printedName": "stopPermissionResponseListener()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTBaseManager(cm)stopPermissionResponseListener",
+            "mangledName": "$s15NTBaseFramework0A7ManagerC30stopPermissionResponseListeneryyFZ",
+            "moduleName": "NTBaseFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "askSignificantAppUpdatePermission",
+            "printedName": "askSignificantAppUpdatePermission(description:presentingViewController:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSString",
+                "printedName": "Foundation.NSString",
+                "usr": "c:objc(cs)NSString"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTBaseManager(cm)askSignificantAppUpdatePermissionWithDescription:presentingViewController:completion:",
+            "mangledName": "$s15NTBaseFramework0A7ManagerC33askSignificantAppUpdatePermission11description24presentingViewController10completionySo8NSStringC_So06UIViewL0CySb_So7NSErrorCSgtctFZ",
+            "moduleName": "NTBaseFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "askCommunicationPermission",
+            "printedName": "askCommunicationPermission(handle:kind:action:displayName:presentingViewController:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSString",
+                "printedName": "Foundation.NSString",
+                "usr": "c:objc(cs)NSString"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSString?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Swift.Bool, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTBaseManager(cm)askCommunicationPermissionWithHandle:kind:action:displayName:presentingViewController:completion:",
+            "mangledName": "$s15NTBaseFramework0A7ManagerC26askCommunicationPermission6handle4kind6action11displayName24presentingViewController10completionySo8NSStringC_S2iALSgSo06UIViewN0CySb_So7NSErrorCSgtctFZ",
+            "moduleName": "NTBaseFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isCommunicationHandleKnown",
+            "printedName": "isCommunicationHandleKnown(handle:kind:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSString",
+                "printedName": "Foundation.NSString",
+                "usr": "c:objc(cs)NSString"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTBaseManager(cm)isCommunicationHandleKnownWithHandle:kind:completion:",
+            "mangledName": "$s15NTBaseFramework0A7ManagerC26isCommunicationHandleKnown6handle4kind10completionySo8NSStringC_SiySbctFZ",
+            "moduleName": "NTBaseFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NTBaseManager",
+                "printedName": "NTBaseFramework.NTBaseManager",
+                "usr": "c:@M@NTBaseFramework@objc(cs)NTBaseManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NTBaseFramework@objc(cs)NTBaseManager(im)init",
+            "mangledName": "$s15NTBaseFramework0A7ManagerCACycfc",
+            "moduleName": "NTBaseFramework",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NTBaseFramework@objc(cs)NTBaseManager",
+        "mangledName": "$s15NTBaseFramework0A7ManagerC",
+        "moduleName": "NTBaseFramework",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/AgeRange\/NTAgeRangeManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 599,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/AgeRange\/NTAgeRangeManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 626,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/AgeRange\/NTAgeRangeTypes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 228,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/AgeRange\/NTAgeRangeTypes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 246,
+      "length": 12,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/AgeRange\/NTAgeRangeTypes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 268,
+      "length": 5,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/AgeRange\/NTAgeRangeTypes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 283,
+      "length": 7,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/Consent\/NTConsentConfiguration.swift",
+      "kind": "Array",
+      "offset": 409,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/Consent\/NTConsentConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 453,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/Consent\/NTConsentTypes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 191,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/Consent\/NTConsentTypes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 209,
+      "length": 11,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/Consent\/NTConsentTypes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 230,
+      "length": 8,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/Consent\/NTConsentTypes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 602,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/Consent\/NTConsentTypes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 615,
+      "length": 6,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/Consent\/NTConsentTypes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 631,
+      "length": 16,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/Consent\/NTConsentTypes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1033,
+      "length": 11,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/Consent\/NTConsentTypes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1054,
+      "length": 8,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/PermissionKit\/Provider\/PermissionKitProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 670,
+      "length": 17,
+      "value": "\"NTPermissionKit\""
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/PermissionKit\/NTPermissionTypes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 456,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/PermissionKit\/NTPermissionTypes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 474,
+      "length": 7,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/Privacy\/PermissionKit\/NTPermissionTypes.swift",
+      "kind": "IntegerLiteral",
+      "offset": 809,
+      "length": 13,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/NTBaseManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 688,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/al02528306\/Projects\/iOSProjects\/NTBaseFramework\/NTBaseFramework\/NTBaseManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 715,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}

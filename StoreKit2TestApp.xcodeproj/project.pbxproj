@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		485F32BD2EFBE10600773028 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 485F32BC2EFBE10600773028 /* StoreKit.framework */; };
+		5243F1FAAD9BE446091587ED /* NTBaseFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8942D6DF199A602D771DDD32 /* NTBaseFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E9B809E7C0928E66D33B9830 /* NTBaseFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8942D6DF199A602D771DDD32 /* NTBaseFramework.xcframework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		484D763F2E3C8EF800E5B611 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,25 +29,47 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4F709E2BAFA912C63399604A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5243F1FAAD9BE446091587ED /* NTBaseFramework.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		484D76312E3C8EF700E5B611 /* StoreKit2TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreKit2TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		484D763E2E3C8EF800E5B611 /* StoreKit2TestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreKit2TestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		484D76482E3C8EF800E5B611 /* StoreKit2TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreKit2TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		485F32BC2EFBE10600773028 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		8942D6DF199A602D771DDD32 /* NTBaseFramework.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = NTBaseFramework.xcframework; path = Frameworks/NTBaseFramework.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		484D76332E3C8EF700E5B611 /* StoreKit2TestApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = StoreKit2TestApp;
 			sourceTree = "<group>";
 		};
 		484D76412E3C8EF800E5B611 /* StoreKit2TestAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = StoreKit2TestAppTests;
 			sourceTree = "<group>";
 		};
 		484D764B2E3C8EF800E5B611 /* StoreKit2TestAppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = StoreKit2TestAppUITests;
 			sourceTree = "<group>";
 		};
@@ -52,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485F32BD2EFBE10600773028 /* StoreKit.framework in Frameworks */,
+				E9B809E7C0928E66D33B9830 /* NTBaseFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +108,7 @@
 				484D76332E3C8EF700E5B611 /* StoreKit2TestApp */,
 				484D76412E3C8EF800E5B611 /* StoreKit2TestAppTests */,
 				484D764B2E3C8EF800E5B611 /* StoreKit2TestAppUITests */,
+				485F32BB2EFBE10600773028 /* Frameworks */,
 				484D76322E3C8EF700E5B611 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +123,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		485F32BB2EFBE10600773028 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				485F32BC2EFBE10600773028 /* StoreKit.framework */,
+				8942D6DF199A602D771DDD32 /* NTBaseFramework.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,6 +142,7 @@
 				484D762D2E3C8EF700E5B611 /* Sources */,
 				484D762E2E3C8EF700E5B611 /* Frameworks */,
 				484D762F2E3C8EF700E5B611 /* Resources */,
+				4F709E2BAFA912C63399604A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -111,8 +152,6 @@
 				484D76332E3C8EF700E5B611 /* StoreKit2TestApp */,
 			);
 			name = StoreKit2TestApp;
-			packageProductDependencies = (
-			);
 			productName = StoreKit2TestApp;
 			productReference = 484D76312E3C8EF700E5B611 /* StoreKit2TestApp.app */;
 			productType = "com.apple.product-type.application";
@@ -134,8 +173,6 @@
 				484D76412E3C8EF800E5B611 /* StoreKit2TestAppTests */,
 			);
 			name = StoreKit2TestAppTests;
-			packageProductDependencies = (
-			);
 			productName = StoreKit2TestAppTests;
 			productReference = 484D763E2E3C8EF800E5B611 /* StoreKit2TestAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,8 +194,6 @@
 				484D764B2E3C8EF800E5B611 /* StoreKit2TestAppUITests */,
 			);
 			name = StoreKit2TestAppUITests;
-			packageProductDependencies = (
-			);
 			productName = StoreKit2TestAppUITests;
 			productReference = 484D76482E3C8EF800E5B611 /* StoreKit2TestAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -400,13 +435,17 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2T4469S56U;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,13 +473,17 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2T4469S56U;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

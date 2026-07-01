@@ -1,0 +1,10 @@
+framework module NTBaseFramework {
+  umbrella header "NTBaseFramework.h"
+  export *
+
+  module * { export * }
+}
+
+module NTBaseFramework.Swift {
+  header "NTBaseFramework-Swift.h"
+}

@@ -1,0 +1,183 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios12 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NTBaseFramework
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
+import AuthenticationServices
+import DeclaredAgeRange
+import Foundation
+@_exported import NTBaseFramework
+import PermissionKit
+import SafariServices
+import Swift
+import UIKit
+import _Concurrency
+import _PermissionKit_UIKit
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc final public class NTWindowProvider : ObjectiveC.NSObject {
+  @objc public static func keyWindow() -> UIKit.UIWindow?
+  @objc public static func topMostViewController() -> UIKit.UIViewController?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class NTAgeRangeManager : ObjectiveC.NSObject {
+  @objc final public func isEligible(completion: @escaping (_ eligible: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void)
+  @objc final public func requestDeclaredAgeRange(ageGate1: Swift.Int, ageGate2: Swift.Int = 0, ageGate3: Swift.Int = 0, presentingViewController: UIKit.UIViewController, completion: @escaping (_ code: Foundation.NSString, _ lowerBound: Foundation.NSNumber?, _ upperBound: Foundation.NSNumber?, _ declaration: Foundation.NSString?, _ error: Foundation.NSError?) -> Swift.Void)
+  @objc deinit
+}
+@objc public enum NTAgeRangeResultCode : Swift.Int {
+  case sharing
+  case declined
+  case notSupported
+  case error
+  case unknown
+  public var rawValueString: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers final public class NTConsentConfiguration : ObjectiveC.NSObject {
+  @objc final public let debugGeography: NTBaseFramework.NTDebugGeography
+  @objc final public let testDeviceIds: [Swift.String]
+  @objc final public let tagForUnderAgeOfConsent: Swift.Bool
+  @objc public init(debugGeography: NTBaseFramework.NTDebugGeography = .disabled, testDeviceIds: [Swift.String] = [], tagForUnderAgeOfConsent: Swift.Bool = false)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class NTConsentManager : ObjectiveC.NSObject {
+  @objc final public var canRequestAds: Swift.Bool {
+    @objc get
+  }
+  @objc final public func configure(_ config: NTBaseFramework.NTConsentConfiguration)
+  @objc final public func requestIfNeeded(presentingViewController: UIKit.UIViewController, completion: @escaping (NTBaseFramework.NTConsentStatus, Foundation.NSError?) -> Swift.Void)
+  @objc final public func resetForDebug(completion: @escaping (Foundation.NSError?) -> Swift.Void)
+  @objc deinit
+}
+@objc public enum NTConsentStatus : Swift.Int {
+  case unknown
+  case required
+  case notRequired
+  case obtained
+  public var rawValueString: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum NTDebugGeography : Swift.Int {
+  case disabled
+  case eea
+  case notEEA
+  case regulatedUSState
+  public var rawValueString: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum NTPrivacyOptionRequirementStatus : Swift.Int {
+  case unknown
+  case notRequired
+  case required
+  public var rawValueString: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class NTPermissionManager : ObjectiveC.NSObject {
+  @objc final public func startResponseListener(onResponse: @escaping (_ jsonResponse: Foundation.NSString) -> Swift.Void)
+  @objc final public func stopResponseListener()
+  @objc final public func askSignificantAppUpdate(description: Swift.String, presentingViewController: UIKit.UIViewController, completion: @escaping (_ started: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void)
+  @objc final public func askCommunication(handle: Swift.String, kind: Swift.Int, action: Swift.Int, displayName: Swift.String?, presentingViewController: UIKit.UIViewController, completion: @escaping (_ started: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void)
+  @objc final public func isKnownHandle(handle: Swift.String, kind: Swift.Int, completion: @escaping (_ known: Swift.Bool) -> Swift.Void)
+  @objc deinit
+}
+@objc public enum NTPermissionResultCode : Swift.Int {
+  case approved
+  case declined
+  case unknown
+  public var rawValueString: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum NTPermissionTopic : Swift.Int {
+  case significantAppUpdate
+  case communication
+  public var rawValueString: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum AuthFlowResult {
+  case success(payload: Swift.String)
+  case failure(message: Swift.String)
+}
+public protocol AuthenticationProvider {
+  func startAuthenticationFlow(authURL: Swift.String, callbackScheme: Swift.String, completion: @escaping (NTBaseFramework.AuthFlowResult) -> Swift.Void)
+}
+@_inheritsConvenienceInitializers @objc final public class NTWebAuthenticationProvider : ObjectiveC.NSObject, NTBaseFramework.AuthenticationProvider {
+  @objc override dynamic public init()
+  final public func startAuthenticationFlow(authURL: Swift.String, callbackScheme: Swift.String, completion: @escaping (NTBaseFramework.AuthFlowResult) -> Swift.Void)
+  @objc deinit
+}
+final public class WebAuthenticationSessionCoordinator {
+  public init(provider: any NTBaseFramework.AuthenticationProvider = NTWebAuthenticationProvider())
+  final public func start(authURL: Swift.String, callbackScheme: Swift.String, completion: @escaping (NTBaseFramework.AuthFlowResult) -> Swift.Void)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class NTBaseManager : ObjectiveC.NSObject {
+  @objc public static func isEligibleForDeclaredAgeRange(completion: @escaping (_ eligible: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void)
+  @objc public static func requestDeclaredAgeRange(ageGate1: Swift.Int, ageGate2: Swift.Int = 0, ageGate3: Swift.Int = 0, presentingViewController: UIKit.UIViewController, completion: @escaping (_ code: Foundation.NSString, _ lowerBound: Foundation.NSNumber?, _ upperBound: Foundation.NSNumber?, _ declaration: Foundation.NSString?, _ error: Foundation.NSError?) -> Swift.Void)
+  @objc public static func configureConsent(_ config: NTBaseFramework.NTConsentConfiguration)
+  @objc public static func requestConsentIfNeeded(presentingViewController: UIKit.UIViewController, completion: @escaping (Foundation.NSString, Foundation.NSError?) -> Swift.Void)
+  @objc public static func canRequestAds() -> Swift.Bool
+  @objc public static func resetConsentForDebug(completion: @escaping (Foundation.NSError?) -> Swift.Void)
+  @objc public static func startWebAuthentication(authURL: Foundation.NSString, callbackScheme: Foundation.NSString, completion: @escaping (_ payload: Foundation.NSString?, _ success: Swift.Bool) -> Swift.Void)
+  @objc public static func startPermissionResponseListener(onResponse: @escaping (_ jsonResponse: Foundation.NSString) -> Swift.Void)
+  @objc public static func stopPermissionResponseListener()
+  @objc public static func askSignificantAppUpdatePermission(description: Foundation.NSString, presentingViewController: UIKit.UIViewController, completion: @escaping (_ started: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void)
+  @objc public static func askCommunicationPermission(handle: Foundation.NSString, kind: Swift.Int, action: Swift.Int, displayName: Foundation.NSString?, presentingViewController: UIKit.UIViewController, completion: @escaping (_ started: Swift.Bool, _ error: Foundation.NSError?) -> Swift.Void)
+  @objc public static func isCommunicationHandleKnown(handle: Foundation.NSString, kind: Swift.Int, completion: @escaping (_ known: Swift.Bool) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension NTBaseFramework.NTAgeRangeResultCode : Swift.Equatable {}
+extension NTBaseFramework.NTAgeRangeResultCode : Swift.Hashable {}
+extension NTBaseFramework.NTAgeRangeResultCode : Swift.RawRepresentable {}
+extension NTBaseFramework.NTConsentStatus : Swift.Equatable {}
+extension NTBaseFramework.NTConsentStatus : Swift.Hashable {}
+extension NTBaseFramework.NTConsentStatus : Swift.RawRepresentable {}
+extension NTBaseFramework.NTDebugGeography : Swift.Equatable {}
+extension NTBaseFramework.NTDebugGeography : Swift.Hashable {}
+extension NTBaseFramework.NTDebugGeography : Swift.RawRepresentable {}
+extension NTBaseFramework.NTPrivacyOptionRequirementStatus : Swift.Equatable {}
+extension NTBaseFramework.NTPrivacyOptionRequirementStatus : Swift.Hashable {}
+extension NTBaseFramework.NTPrivacyOptionRequirementStatus : Swift.RawRepresentable {}
+extension NTBaseFramework.NTPermissionResultCode : Swift.Equatable {}
+extension NTBaseFramework.NTPermissionResultCode : Swift.Hashable {}
+extension NTBaseFramework.NTPermissionResultCode : Swift.RawRepresentable {}
+extension NTBaseFramework.NTPermissionTopic : Swift.Equatable {}
+extension NTBaseFramework.NTPermissionTopic : Swift.Hashable {}
+extension NTBaseFramework.NTPermissionTopic : Swift.RawRepresentable {}

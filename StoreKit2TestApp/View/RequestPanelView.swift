@@ -61,6 +61,18 @@ struct RequestPanelView: View {
                     await viewModel.onRequestDeclaredAgeRange(presenter: vc)
                 }
             }
+            ButtonCardView(title: "PermissionKit - 커뮤니케이션 승인 요청") {
+                Task { @MainActor in
+                    guard let vc = topViewController() else { return }
+                    viewModel.onRequestCommunicationPermission(presenter: vc)
+                }
+            }
+            ButtonCardView(title: "PermissionKit - 중대 변경 승인 요청") {
+                Task { @MainActor in
+                    guard let vc = topViewController() else { return }
+                    viewModel.onRequestSignificantAppUpdatePermission(presenter: vc)
+                }
+            }
         }
         .padding()
         .background(
