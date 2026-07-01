@@ -96,5 +96,9 @@ struct BottomPanelView: View {
         } message: {
             Text("영수증 정보가 클립보드에 복사되었습니다.")
         }
+        
+        ButtonCardView(title: "GameCenter Login") {
+            viewModel.authenticateGameCenter()
+        }
     }
 }
