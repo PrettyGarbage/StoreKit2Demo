@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		485F32BD2EFBE10600773028 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 485F32BC2EFBE10600773028 /* StoreKit.framework */; };
+		485F32BF2EFBE10600773028 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 485F32BE2EFBE10600773028 /* GameKit.framework */; };
 		5243F1FAAD9BE446091587ED /* NTBaseFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8942D6DF199A602D771DDD32 /* NTBaseFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E9B809E7C0928E66D33B9830 /* NTBaseFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8942D6DF199A602D771DDD32 /* NTBaseFramework.xcframework */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		484D763E2E3C8EF800E5B611 /* StoreKit2TestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreKit2TestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		484D76482E3C8EF800E5B611 /* StoreKit2TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreKit2TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		485F32BC2EFBE10600773028 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		485F32BE2EFBE10600773028 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		8942D6DF199A602D771DDD32 /* NTBaseFramework.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = NTBaseFramework.xcframework; path = Frameworks/NTBaseFramework.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				485F32BD2EFBE10600773028 /* StoreKit.framework in Frameworks */,
+				485F32BF2EFBE10600773028 /* GameKit.framework in Frameworks */,
 				E9B809E7C0928E66D33B9830 /* NTBaseFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				485F32BC2EFBE10600773028 /* StoreKit.framework */,
+				485F32BE2EFBE10600773028 /* GameKit.framework */,
 				8942D6DF199A602D771DDD32 /* NTBaseFramework.xcframework */,
 			);
 			name = Frameworks;

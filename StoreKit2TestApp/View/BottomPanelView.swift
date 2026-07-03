@@ -100,5 +100,13 @@ struct BottomPanelView: View {
         ButtonCardView(title: "GameCenter Login") {
             viewModel.authenticateGameCenter()
         }
+        .alert("GameCenter", isPresented: Binding(
+            get: { viewModel.gameCenterStatusMessage != nil },
+            set: { if !$0 { viewModel.gameCenterStatusMessage = nil } }
+        )) {
+            Button("Confirm", role: .cancel) {}
+        } message: {
+            Text(viewModel.gameCenterStatusMessage ?? "")
+        }
     }
 }

@@ -268,28 +268,48 @@ class StoreViewModel: ObservableObject {
     }
 
     //MARK: - GameCenter Sign in
+    @Published var gameCenterStatusMessage: String? = nil
+
+    /// authenticateHandler는 GKLocalPlayer 싱글턴에 남는 장기 핸들러라 1회만 등록한다.
+    private var isGameCenterHandlerRegistered = false
+
     func authenticateGameCenter() {
         let localPlayer = GKLocalPlayer.local
-        
-        localPlayer.authenticateHandler = { (viewController, error) in
+
+        if localPlayer.isAuthenticated {
+            gameCenterStatusMessage = "이미 로그인됨: \(localPlayer.displayName)"
+            return
+        }
+
+        guard !isGameCenterHandlerRegistered else {
+            print("게임센터 인증 진행 중 - 핸들러 재등록 생략")
+            return
+        }
+        isGameCenterHandlerRegistered = true
+
+        localPlayer.authenticateHandler = { [weak self] (viewController, error) in
             if let viewController = viewController {
-                UIApplication.shared.connectedScenes
-                    .compactMap { $0 as? UIWindowScene }
-                    .first?.windows.first?.rootViewController?
-                    .present(viewController, animated: true)
+                guard let presenter = NTWindowProvider.topMostViewController() else {
+                    self?.gameCenterStatusMessage = "게임센터 로그인 실패: 표시할 화면을 찾지 못했습니다."
+                    return
+                }
+                presenter.present(viewController, animated: true)
                 return
             }
-            
+
             if let error = error {
                 print("게임센터 로그인 실패: \(error.localizedDescription)")
+                self?.gameCenterStatusMessage = "게임센터 로그인 실패: \(error.localizedDescription)"
                 return
             }
-            
+
             if localPlayer.isAuthenticated {
                 print("게임센터 로그인 성공: \(localPlayer.displayName)")
                 print("Player ID: \(localPlayer.gamePlayerID)")
+                self?.gameCenterStatusMessage = "게임센터 로그인 성공: \(localPlayer.displayName)"
             } else {
                 print("게임센터 로그인 취소됨")
+                self?.gameCenterStatusMessage = "게임센터 로그인 취소됨"
             }
         }
     }
